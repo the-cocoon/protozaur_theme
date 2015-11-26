@@ -8,7 +8,7 @@
     remote       : data-remote
 
 - if page.current?
-  .ptz-theme-0--paginator--page.ptz-theme-0--paginator--current= page
+  .ptz--paginator-0--page.ptz--paginator-0--current= page
 - else
-  = link_to page, url, class: 'ptz-theme-0--paginator--page', rel: (page.next? ? :next : page.prev? ? :prev : nil)
+  = link_to page, url, class: 'ptz--paginator-0--page', rel: (page.next? ? :next : page.prev? ? :prev : nil)
 '
