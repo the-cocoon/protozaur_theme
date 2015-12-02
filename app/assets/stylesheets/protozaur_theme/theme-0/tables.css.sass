@@ -1,15 +1,19 @@
-.ptz--theme-0--table-0
-  &--table
-    border: 1px solid #e3f2fd
+.ptz--theme-0
+  .ptz--table-0
+    &--table
+      border: 1px solid #e3f2fd
 
-  &--tr:nth-child(odd)
-    background: #f4f9fd
+    &--header
+      white-space: nowrap
+      text-align: left
 
-  &--th
-    white-space: nowrap
-    text-align: left
+      font-weight: bold
+      background: #f4f9fd
+      // .ptz--table-0--call:nth-child(even)
 
-  &--th:nth-child(even)
-    background: #e3f2fd
+    &--row:nth-child(odd)
+      background: #f4f9fd
 
-  &--td
+    &--row
+      &:hover
+        box-shadow: 1px 1px 1px 1px #888
